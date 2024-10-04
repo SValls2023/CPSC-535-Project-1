@@ -1,12 +1,18 @@
 Algorithm 1_B: Joining Databases
 
+Problem Statement:
+Join two databases togehter, which contain shared names and their respective values
+
+Prerequisites:
+Install Pyhton 3.12.7 on your machine. (https://www.python.org/ftp/python/3.12.7/python-3.12.7-amd64.exe)
+
 1_B Files:
 - Join_DB.py: Contains implementation of Joining Databases problem
 - databaseA.txt & database2.txt: Two input files used to represent the left/right databases that will be joined
 
 Compilation Instructions:
-- Enter the problem 1_B directory
-- Compile and run the code uaing the command: python3 Join_DB.py
+- Open your terminal and navigte to the problem 1_B directory
+- Compile and run the code using the command: python3 Join_DB.py
 
 User Input Instructions:
 - User input can be customized in databaseA.txt and databaseB.txt
