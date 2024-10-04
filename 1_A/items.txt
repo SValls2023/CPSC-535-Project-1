@@ -1,0 +1,7 @@
+400, Survival Kit
+701, Bed
+10, Flashlight
+21, Pro Flashlight
+980, Iphone
+20, Steak Dinner
+1799, Laptop
