@@ -1,21 +1,22 @@
 # Input: List of item tuples (price, item) and target sum
 # Output: Item pair that adds up to the target sum
-def shipTwoItems(items, target):
+def shipTwoItems(product_list, target):
     # If item list is empty, return NIL
-    if not items:
-        return None
+    if not product_list:
+        return "NIL"
     
     # Dictionary to store all previous looked at items 
     itemDictionary = {}
     targetProducts = []
     
     # Loop through all items in the list
-    for i in range(len(items)):
-        tupleItem = items[i]
+    for i in range(len(product_list)):
+        tupleItem = product_list[i]
         targetDifference = target - tupleItem[0]
         # If item in dictionary matches with targetDifference, return pair (current item, dictionary item)
         if itemDictionary.get(targetDifference) != None:
-            targetProducts.append((tupleItem, items[itemDictionary[targetDifference]]))
+            targetProducts.append(tupleItem)
+            targetProducts.append(product_list[itemDictionary[targetDifference]])
             return targetProducts
         # Add item to dictionary if a pair has not been found
         itemDictionary.update({tupleItem[0] : i})
