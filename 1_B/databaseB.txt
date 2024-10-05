@@ -1,7 +1,7 @@
-SpongeBob, 00001
-Patrick, 45321
-Squidward, 66666
-Sandy, 40293
-Gary, 33333
-Eugene, 44444
-Sheldon, 31415
+Samuel, Valls
+John, Smith
+Christian, Chavez
+Juan, Ortiz
+Eugene, Krabs
+Sheldon, Plankton
+Sandy, Cheeks

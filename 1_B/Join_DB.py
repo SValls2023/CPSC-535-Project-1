@@ -28,9 +28,8 @@ def joinDatabase(leftDB, rightDB):
     # If the rightDB contains a name found in leftDB, store the key in joinedDB with both its leftDB and rightDB values
     for j in rightDB:
         key = j[0]
-        value = j[1]
         if dbDictionary.get(key) != None:
-            joinedDB.append((key, leftDB[dbDictionary[key]][1], value))
+            joinedDB.append((key, leftDB[dbDictionary[key]][1], j[1]))
 
     return joinedDB
 
