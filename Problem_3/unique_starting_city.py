@@ -24,9 +24,16 @@ def find_starting_city(city_distances, gas, mpg):
 
 
 if __name__ == "__main__":
-    city_distances = [5, 25, 15, 10, 15]
-    gas = [1, 2, 1, 0, 3]
-    mpg = 10
+    num_cities = int(input("Enter number of cities: "))
+    city_distances = []
+    gas = []
+    for i in range(num_cities):
+        d = int(input(f"Enter distance of city {i}: "))
+        city_distances.append(d)
+        g = int(input(f"Enter gas amount of city {i}: "))
+        gas.append(g)
+        
+    mpg = int(input("Enter the mpg used for gas: "))
     
     starting_city = find_starting_city(city_distances, gas, mpg)
     print(f"Preferred starting city: {starting_city}")
